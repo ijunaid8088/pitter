@@ -1,0 +1,23 @@
+<h2>Show tweet</h2>
+
+<ul>
+
+  <li>
+    <strong>Image url:</strong>
+    <%= @tweet.image_url %>
+  </li>
+
+  <li>
+    <strong>Content:</strong>
+    <%= @tweet.content %>
+  </li>
+
+  <li>
+    <strong>Source url:</strong>
+    <%= @tweet.source_url %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: tweet_path(@conn, :edit, @tweet) %>
+<%= link "Back", to: tweet_path(@conn, :index) %>
